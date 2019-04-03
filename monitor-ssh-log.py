@@ -3,7 +3,7 @@
 import re, smtplib, requests
 
 """
-Author: Jorin Grant
+Author: PythonBlack
 Description: This script will read the ssh log and loook for new connections.
 Once a new connection is found and the IP address is not in the whitelist,it will send me a text message from an email
 account with the IP address of the user and the username of the login.
