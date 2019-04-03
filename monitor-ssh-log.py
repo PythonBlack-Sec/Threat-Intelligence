@@ -9,7 +9,7 @@ Once a new connection is found and the IP address is not in the whitelist,it wil
 account with the IP address of the user and the username of the login.
 """
 # Whitelisted IPs
-ip_whitelist = []
+ip_whitelist = [] # Example ["1.1.1.1","2.2.2.2","3.3.3.3"]
 
 
 # Compile regex expressions to match content
@@ -18,7 +18,7 @@ ipaddr = "\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}"
 def iplocation(ip,user,date):
     url = "http://iplocation.com/?ip="
 
-    # Query geo-ip service and save response in JSON 
+    # Query geo-ip service and save response in JSON
     response = requests.post(url+ip)
     json_response = response.json()
 
@@ -66,7 +66,7 @@ Location: {city}, {region}, {country}, {postal_code}\nOrganization: {organizatio
     monitor() # Return to monitoring log
 
 def monitor():
-    with open("/var/log/auth.log", "rb") as log: # Edit the path to 
+    with open("/var/log/auth.log", "rb") as log: # Edit the path to
         while True:
             log.seek(0,2)
             for line in log:
