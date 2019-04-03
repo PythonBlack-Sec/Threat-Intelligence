@@ -44,7 +44,8 @@ def sendtext(ip,user,date,city,region,country,postal_code,organization):
     password = ""                         # ADD PASSWORD
 
     # Recepient
-    phone_num = "1112223333@txt.bell.ca"  # Add email or phone_number@text address
+    phone_num = "1112223333@txt.bell.ca"  # Example txt addresses ["@txt.bell.ca", "@pcs.rogers.com", "@fido.ca", "@txt.windmobile.ca", "@msg.telus.com"]
+
     msg = """*ALERT*
 New SSH login on host:
 IP address: {ip}
