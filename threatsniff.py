@@ -20,7 +20,7 @@ are then queried to a threat intelligence (TI) service provider named Virus Tota
 
 
 global key
-key = "e1b135d36f93075b5660a380a755999eebe8435fd616503cc46a468478f17cac"
+key = "" # Enter VirusTotal API key
 host_ip = "10.0.2.15"
 
 
